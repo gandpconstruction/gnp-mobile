@@ -1,0 +1,26 @@
+{
+    "configurations": [
+      {
+        "type": "node",
+        "request": "launch",
+        "name": "Launch Expo App",
+        "program": "${workspaceFolder}/${input:entryFile}",
+        "cwd": "${workspaceFolder}",
+        "runtimeExecutable": "npx",
+        "runtimeArgs": ["npx", "expo", "start"],
+        "console": "integratedTerminal"
+      }
+    ],
+    "inputs": [
+      {
+        "type": "pickString",
+        "id": "entryFile",
+        "description": "Select the entry file for your Expo app",
+        "options": [
+          "expo-router/entry",
+          "app/(tabs)/index.tsx",
+          "app/_layout.tsx"
+        ]
+      }
+    ]
+  }
