@@ -1,6 +1,6 @@
 {
   "expo": {
-    "name": "gnp-mobile",
+    "name": "G&P Mobile",
     "slug": "gnp-mobile",
     "version": "1.0.0",
     "orientation": "portrait",
@@ -11,11 +11,19 @@
     "ios": {
       "supportsTablet": true
     },
+    "platforms": [
+      "ios",
+      "android"
+    ],
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "permissions": [
+        "android.permission.CAMERA",
+        "android.permission.RECORD_AUDIO"
+      ]
     },
     "web": {
       "bundler": "metro",
@@ -44,6 +52,15 @@
     ],
     "experiments": {
       "typedRoutes": true
-    }
+    },
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "9cb4e6e2-54a5-49be-bf63-c83a76aa199d"
+      }
+    },
+    "owner": "afgasparo"
   }
 }
